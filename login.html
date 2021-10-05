@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Magnific Popup core CSS file -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/myStyle.css">
+
+    <link rel="stylesheet" href="css/announcement.css">
+
+    <title>PBeBank</title>
+
+</head>
+
+<body class="bg-gradient">
+
+    <div class="popup-screen">
+        <div class="popup-box shadow">
+            <i class="fas fa-times close-btn"></i>
+            <h1>CAUTION ! </h1>
+            <div class="popupimg"><img src="assets/pop-up-image.jpg" class="popUpImg" alt="">
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Recognizing these common signs
+                of a scam could help you avoid falling for one. Find out steps you can take if you were scammed.</p>
+            <!-- <a href="#" class="btn">Close</a> -->
+        </div>
+    </div>
+
+    <div class="container-fluid py-2 text-center notice">
+        <marquee class="marquee" behavior="scroll" direction="left" height="20px" width="100%">
+            <h6> <i class="fas fa-exclamation-triangle px-2"></i> Please be informed that from 2am-7am, 17th june 2020,
+                we will having system maintainence. <i class="fas fa-exclamation-triangle px-2"></i></h6>
+        </marquee>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent">
+        <div class="container-fluid">
+            <div class="navbar-header ">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/pb_logo.png" alt="Public Bank">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+
+                </div>
+                <div class="offcanvas-body">
+                    <div class="createAccCon">
+                        <img src="/assets/register-acc.png" alt="register_account">
+                    </div>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="#">iBanking</a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="#Announcements">Announcements</a>
+                            </button>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN BODY -->
+    <div class="row align-items-center justify-content-between mainBody">
+        <div class="col-lg">
+            <div class="container greetCon mx-auto px-5">
+                <h1 class="display-2 mb-0 text-center text-lg-start">Welcome to PB Engage MY</h1>
+                <div class="pCon mt-3">
+                    <p>With PBe, you can manage your money directly in-app and pay with your card no matter where you
+                        are. Try it now for free!</p>
+                </div>
+                <div class="row appBadge ms-1 mt-4">
+                    <div class="col-2 appleBtn text-center">
+                        <a href="https://apps.apple.com/us/app/pb-engage-my/id1477329428?itsct=apps_box_badge&amp;itscg=30200"
+                            style="display: inline-block; overflow: hidden; border-radius: 13px;">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1568073600&h=6cc9c16e59825470c706504aaef26a29"
+                                alt="Download on the App Store" style="border-radius: 13px;">
+                        </a>
+                    </div>
+                    <div class="col-2 gPlayBtn">
+                        <a
+                            href='https://play.google.com/store/apps/details?id=com.engage.pbb.pbengage2my.release&hl=en&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                            <img alt='Get it on Google Play'
+                                src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg">
+            <div class="loginCon">
+
+                <div class="row flex-row flex-wrap justify-content-between align-items-center">
+                    <div class="title ">
+                        <h2></h2>
+
+                    </div>
+                    <div class="pbeLogo"></div>
+                </div>
+
+                <div class="login-form ">
+                    <div class="user-id-con pt-2">
+                        <input required type="text" name="userIdInput" class="userIdInput" placeholder="User ID">
+                        <label class="userIdLabel">User ID</label>
+                    </div>
+                    <div class="disclaimerLogin p-2 ps-0">
+                        <p class="text-muted">By login, you agree to our <span><a href="#" style="color: #333;">Terms &
+                                    Conditions</a></span></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-smt mt-3 w-100">
+                        Next
+                    </button>
+                    <div class="text-center mt-2">
+                        <a href="#" class="text-danger pt-1">
+                            <p>Forget Password ?</p>
+                        </a>
+                    </div>
+                </div>
+                <div hidden class="login-form-2">
+                    <div class="pt-2">
+                        <div class="secImg">
+                            <img src="/assets/security-phrase-demo.svg" alt="sec-phrase">
+                        </div>
+
+                        <div class="form-check form-switch mt-4">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">
+                                Is this your login
+                                Phrase
+                            </label>
+                        </div>
+                        <div class="my-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <div id="passwordHelpBlock" class="form-text">
+                                Please make sure your login phrase is correct.
+                            </div>
+                        </div>
+                        <div class="pb-5">
+                            <a href="@Url.Action(" Index3", "Home" )" type="submit"
+                                class="btn btn-primary mt-3  w-100 text-center">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="chevronContainer mt-3">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+    <div class="announcementCon mt-5">
+        <div class="row myAnnouncement justify-content-center">
+            <h3 id="Announcements"></h3>
+            <h6>Click on the news to enlarge</h6>
+        </div>
+
+        <div class="timeline-container">
+
+            <div class="my-slider-wrapper pt-0">
+
+                <div class="swiper-container mySwiper2">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="my-item swiper-slide">
+
+                            <div class="my-image-wrap">
+                                <img class="promotion-img" src="assets/ads/24.jpg" />
+                            </div>
+
+                            <div class="my-content-wrap">
+                                <h3 class="my-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
+                                    gifts
+                                </h3>
+
+                                <div class="my-text" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">
+                                    we
+                                    will help you to make an elegant and luxurius
+                                    interrior designed by porfessional interrior designer.
+                                </div>
+
+                                <div class="my-button" data-swiper-parallax-y="-300"
+                                    data-swiper-parallax-duration="1500">
+
+                                    <a class="link link--arrowed" href="assets/ads/24.jpg"
+                                        date-source="assets/ads/24.jpg">read more
+
+                                        <img src="assets/ads/24.jpg" alt="error" width="0px" height="0px">
+
+                                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28"
+                                            height="28" viewBox="0 0 32 32">
+                                            <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round"
+                                                stroke-miterlimit="10">
+                                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                                <path class="arrow-icon--arrow"
+                                                    d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                                            </g>
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="my-item swiper-slide">
+
+                            <div class="my-image-wrap">
+                                <img class="promotion-img" src="assets/ads/23.jpg" />
+                            </div>
+
+                            <div class="my-content-wrap">
+                                <h3 class="my-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
+                                    covid-19
+                                </h3>
+
+                                <div class="my-text" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">
+                                    we
+                                    will help you to make an elegant and luxurius
+                                    interrior designed by porfessional interrior designer.
+                                </div>
+
+                                <div class="my-button" data-swiper-parallax-y="-300"
+                                    data-swiper-parallax-duration="1500">
+
+                                    <a class="link link--arrowed" href="assets/ads/23.jpg"
+                                        date-source="assets/ads/23.jpg">read more
+
+                                        <img src="assets/ads/23.jpg" alt="error" width="0px" height="0px">
+
+                                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28"
+                                            height="28" viewBox="0 0 32 32">
+                                            <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round"
+                                                stroke-miterlimit="10">
+                                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                                <path class="arrow-icon--arrow"
+                                                    d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                                            </g>
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="my-item swiper-slide">
+
+                            <div class="my-image-wrap">
+                                <img class="promotion-img" src="assets/ads/25.jpg" />
+                            </div>
+
+                            <div class="my-content-wrap">
+                                <h3 class="my-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
+                                    promotion
+                                </h3>
+
+                                <div class="my-text" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">
+                                    we
+                                    will help you to make an elegant and luxurius
+                                    interrior designed by porfessional interrior designer.
+                                </div>
+
+                                <div class="my-button" data-swiper-parallax-y="-300"
+                                    data-swiper-parallax-duration="1500">
+
+                                    <a class="link link--arrowed" href="assets/ads/25.jpg"
+                                        date-source="assets/ads/25.jpg">read more
+
+                                        <img src="assets/ads/25.jpg" alt="error" width="0px" height="0px">
+
+                                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28"
+                                            height="28" viewBox="0 0 32 32">
+                                            <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round"
+                                                stroke-miterlimit="10">
+                                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                                <path class="arrow-icon--arrow"
+                                                    d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                                            </g>
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="my-item swiper-slide">
+
+                            <div class="my-image-wrap">
+                                <img class="promotion-img" src="assets/ads/26.jpg" />
+                            </div>
+
+                            <div class="my-content-wrap">
+                                <h3 class="my-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
+                                    Cards
+                                </h3>
+
+                                <div class="my-text" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">
+                                    we
+                                    will help you to make an elegant and luxurius
+                                    interrior designed by porfessional interrior designer.
+                                </div>
+
+                                <div class="my-button" data-swiper-parallax-y="-300"
+                                    data-swiper-parallax-duration="1500">
+
+                                    <a class="link link--arrowed" href="assets/ads/26.jpg"
+                                        date-source="assets/ads/26.jpg">read more
+
+                                        <img src="assets/ads/26.jpg" alt="error" width="0px" height="0px">
+
+                                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28"
+                                            height="28" viewBox="0 0 32 32">
+                                            <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round"
+                                                stroke-miterlimit="10">
+                                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                                <path class="arrow-icon--arrow"
+                                                    d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                                            </g>
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="my-nav-page-wrap">
+
+                    <div class="my-navigation">
+
+                        <div class="my-button-prev my-n-p">
+
+                            <a class="link link--arrowed" href="#">
+
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                    viewBox="0 0 32 32">
+                                    <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round"
+                                        stroke-miterlimit="10">
+                                        <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                        <path class="arrow-icon--arrow"
+                                            d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                        </path>
+                                    </g>
+                                </svg>
+
+                            </a>
+
+                        </div>
+
+                        <div class="my-button-next my-n-p">
+
+                            <a class="link link--arrowed" href="#">
+
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                    viewBox="0 0 32 32">
+                                    <g fill="none" stroke="#ff215a" stroke-width="1.5" stroke-linejoin="round"
+                                        stroke-miterlimit="10">
+                                        <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                                        <path class="arrow-icon--arrow"
+                                            d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                        </path>
+                                    </g>
+                                </svg>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="my-page-wrap">
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="footer mt-auto py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Terms & Conditions</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy Notice</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Security Statement</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Customer Service Charter</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Bank Negara Malaysia</a></li>
+            </ul>
+            <div class="row justify-content-around">
+                <div class="col-lg">
+                    <ul class="text-center mb-0 mx-auto p-0">
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <img style="width: 50px" src="/assets/bank-info/bankinginfo.gif" alt="bankinginfo">
+                            </a>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <img style="width: 50px" src="/assets/bank-info/insuranceinfo.gif" alt="insuranceinfo">
+                            </a>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <img style="width: 50px" src="/assets/bank-info/smeinfo.gif" alt="smeinfo">
+                            </a>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <img style="width: 50px" src="/assets/bank-info/housingwatch.gif" alt="housingwatch">
+                            </a>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <img style="width: 50px" src="/assets/bank-info/mybayar.gif" alt="mybayar">
+                            </a>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <img style="width: 50px" src="/assets/bank-info/mifc.gif" alt="mifc">
+                            </a>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <img style="width: 50px" src="/assets/bank-info/akpk.gif" alt="akpk">
+                            </a>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <img style="width: 50px" src="/assets/bank-info/pidm_member.gif" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg">
+                    <ul class="text-center mb-0 mx-auto p-0 mt-3 mt-lg-0">
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <button class="social-link-btn btn-facebook">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                            </button>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <button class="social-link-btn btn-instagram">
+                                <span><i class="fab fa-instagram"></i></span>
+                            </button>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <button class="social-link-btn btn-twitter">
+                                <span><i class="fab fa-twitter"></i></span>
+                            </button>
+                        </li>
+                        <li class="list-inline-item mb-2 mb-lg-0">
+                            <button class="social-link-btn btn-linkedin">
+                                <span><i class="fab fa-linkedin"></i></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-center text-muted mt-4">Copyright &copy
+                <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> Public Bank
+                Berhad 196501000672 (6463-H). ALL RIGHTS RESERVED.
+            </p>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/wait-for-image.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/oriScript.js"></script>
+
+
+</body>
+
+</html>

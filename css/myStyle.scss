@@ -1,0 +1,864 @@
+$bg-light: #f3f4fa;
+$bg-white: #fefeff;
+$bg-dark-text: #333;
+$primary: #d64354;
+$blue: #0072bc;
+$bg-info: #819ce0;
+$bg-warning: #ffc037;
+$bg-form: #f4f2f7;
+$bg-black-transparent: rgba(0, 0, 0, 0);
+
+$bg-primary-login-url: url("/assets/login2-bg2.jpg");
+
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "../fontawesome/scss/brands.scss";
+
+
+
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url("/fonts/gilroy/Gilroy-Light.ttf");
+}
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url("/fonts/gilroy/Gilroy-Regular.ttf");
+}
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url("/fonts/gilroy/Gilroy-Medium.ttf");
+}
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url("/fonts/gilroy/Gilroy-SemiBold.ttf");
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url("/fonts/gilroy/Gilroy-Bold.ttf");
+}
+
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100% !important;
+}
+/* NAVBAR AND SCROLLBAR */
+.navbar {
+    transition: 0.1s;
+    background-color: transparent;
+    height: auto !important;
+
+    top: 40px !important;
+}
+.navbar-collapse {
+    width: 100vw;
+    margin: 0;
+}
+.navbar-header {
+    float: left;
+    padding: 15px;
+    margin-left: 50px;
+    width: 100%;
+}
+.navbar-brand {
+    float: none;
+}
+.offcanvas-start {
+    width: 280px;
+}
+.btn {
+    min-width: auto !important;
+}
+.offcanvas {
+    background-image: url(/assets/sidebar-svg.svg);
+    background-position-x: right;
+    background-position-y: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.offcanvas-title, .btn-close {
+    color: #fff;
+}
+.offcanvas-body .navbar-nav .nav-item {
+    float: left;
+    
+    & button {
+        width: fit-content !important;
+        margin-top: 15px;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent !important;
+        border: none !important;
+        
+        & a {
+            transition: 0.15s ease-in;
+            font-family: 'Gilroy-Medium', sans-serif;
+        }
+        
+    }
+    
+}
+.offcanvas-body .navbar-nav .nav-item button:hover {
+    margin-top: 20px;
+    background-color: white !important;
+    border: none !important;
+} 
+.offcanvas-body .navbar-nav .nav-item button:hover a{
+    color: #D14655 !important;
+}
+.offcanvas-body .navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    float: left;
+    &.active {
+        border-bottom: none !important;
+    }
+}
+.navbar-toggler {
+    position: absolute;
+    left: 0;
+    margin-left: .5rem;
+    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    outline: 0;
+    border: none;
+}
+.navbar-toggler:focus:not(:focus-visible) {
+    outline: none !important;
+}
+.nav-link {
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: #333 !important;
+}
+.navbar-toggler-icon {
+    background-image: url(/assets/menu-icon.svg) !important;
+}
+.scrolled {
+    background-color: #f4fcff !important;
+    transition: 0.1s linear;
+    box-shadow:
+    0px 0.6px 1.2px -4px rgba(0, 0, 0, 0.047),
+    0px 1.5px 3px -4px rgba(0, 0, 0, 0.067),
+    0px 3px 6.2px -4px rgba(0, 0, 0, 0.083),
+    0px 6.2px 12.8px -4px rgba(0, 0, 0, 0.103),
+    0px 17px 35px -4px rgba(0, 0, 0, 0.15)
+    ;
+    top: 0 !important;
+}
+.scrolled > .container-fluid > .navbar-collapse > .navbar-nav > .nav-link {
+    color: #333 !important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.mainBody {
+    background-image: $bg-primary-login-url;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh !important;
+    max-height: fit-content !important;
+    transition: 1s;
+    transition-timing-function: ease;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: $bg-black-transparent;
+    background-blend-mode: multiply;
+    animation-fill-mode: forwards !important;
+    
+    & .col-lg {
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    
+    & .col-lg .greetCon h1 {
+        font-family: "Gilroy-Regular", sans-serif;
+        color: $bg-dark-text;
+    }
+    & .col-lg .pCon p {
+        font-family: 'Gilroy-Medium', sans-serif;
+    }
+}
+.announcementCon {
+    position: relative;
+    top: -40px;
+}
+.createAccCon {
+    width: 100%;
+    height: 163px;
+    cursor: pointer;
+}
+.createAccCon img {
+    width: 100%;
+    height: 100%;
+}
+.social-link-btn {
+    outline: none;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.2);
+        box-shadow: 15px 15px 34px -17px rgba(0,0,0,1);
+        -webkit-box-shadow: 15px 15px 34px -17px rgba(0,0,0,1);
+        -moz-box-shadow: 15px 15px 34px -17px rgba(0,0,0,1);
+        
+    }
+}
+.btn-facebook {
+    transition: all 0.3s;
+    border: 2px solid #4267B2;
+    background-color: #fafbfe;
+    span i {
+        color: #4267B2;
+        
+    }
+    &:hover {
+        background-color: #4267B2;
+        span i {
+            color: #fafbfe;
+            text-shadow: 2px 2px 4px #000;
+        }
+    }
+}
+.btn-instagram {
+    transition: all 0.3s;
+    border: 2px solid #8592EC;
+    background-clip: text;
+    -webkit-background-clip: border-box;
+    background-color: #fafbfe;
+    span i {
+        width: 16px;
+        color: transparent;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 700;
+    }
+    &:hover {
+        background-color: #8592EC;
+        span i {
+            color: #fafbfe;
+            text-shadow: 2px 2px 4px #000;
+        }
+    }
+}
+.btn-twitter {
+    transition: all 0.3s;
+    border: 2px solid #1DA1F2;
+    background-color: #fafbfe;
+    span i {
+        color: #1DA1F2;
+    }
+    &:hover {
+        background-color: #1DA1F2;
+        span i {
+            color: #fafbfe;
+            text-shadow: 2px 2px 4px #000;
+        }
+    }
+}
+.btn-linkedin {
+    transition: all 0.3s;
+    border: 2px solid #0077b5;
+    background-color: #fafbfe;
+    span i {
+        color: #0077b5;
+    }
+    &:hover {
+        background-color: #0077b5;
+        span i {
+            color: #fafbfe;
+            text-shadow: 2px 2px 4px #000;
+        }
+    }
+}
+
+.loginCon {
+    position: relative;
+    bottom: 50px;
+    border-radius:2px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    background-color: #fff;
+    padding: 2rem;
+    transition: all 0.3s;
+    
+    & .title {
+        
+        width: fit-content;
+        
+        & h2 {
+            margin: 0;
+            width: fit-content;
+            font-family: 'Gilroy-Bold', sans-serif;
+            &:after {
+                content: "PBe Sign In";
+            }
+        }
+    }
+    
+    & .pbeLogo {
+        background-image: url(/assets/pbe-logo.png);
+        width: 65px;
+        height: 30px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    
+    & .user-id-con {
+        position: relative;
+        margin-top: 2rem;
+        
+        & .userIdInput {
+            font-family: 'Gilroy-SemiBold', sans-serif;
+            border-radius: 5px; 
+            border: 0.1px solid #666;
+            padding: 0.5rem;
+            margin: 0;
+            width: 100%;
+            outline: none;
+        }
+        
+        & .userIdLabel {
+            font-family: 'Gilroy-SemiBold', sans-serif;
+            /* Position the label */
+            left: 0;
+            position: absolute;
+            top: -5px;
+            
+            /* Hide it by default */
+            opacity: 0;
+            transition: all 200ms;
+        }
+    }
+    
+    & .disclaimerLogin {
+        & p {
+            font-family: 'Gilroy-Regular', sans-serif;
+            font-size: 0.8rem;
+            
+            & span a {
+                text-decoration: none;
+            }
+        }
+    }
+    
+    & .title, .login-form, .login-form-2 {
+        margin: 0;
+    }
+    & .login-form-2 .pt-2 .secImg {
+        object-fit: cover;
+        object-position: center;
+    }
+    & .login-form-2 .pt-2 .secImg img {
+        height: 100px;
+        width: 100%;
+        transform: scale(2);
+    }
+    
+}
+
+.userIdInput:not(:placeholder-shown) + .userIdLabel {
+    background: #FFF;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+
+.appBadge div, .pCon {
+    display: none;
+}
+
+.myAnnouncement h3{
+    font-family: 'Gilroy-Bold', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+
+    &:after {
+        content: "Announcements";
+    }
+}
+
+.myAnnouncement h6{
+    font-family: 'Gilroy-Regular', sans-serif;
+    text-align: center;
+    color: #666;
+}
+
+
+.popup-screen{
+    z-index: 999999;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.5s ease;
+    transition-property: visibility;
+}
+
+.popup-screen.active{
+    visibility: visible;
+}
+
+.popup-box{
+    position: relative;
+    background: rgba(255, 255, 255, 1.0);
+    /* backdrop-filter: blur(0px); */
+    max-width: 700px;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 40px;
+    border-radius: 4px;
+    transform: scale(0);
+    transition: 0.5s ease;
+    transition-property: transform;
+}
+.popup-screen.active .popup-box{
+    transform: scale(1);
+}
+.popup-box p{
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.popup-box .btn{
+    color: #fff;
+    background: #4E5E68;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 27px;
+    border-radius: 2px;
+}
+
+.close-btn{
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.popupimg{
+    width:  300px;
+    height: 300px;
+}
+
+.popupimg img{
+    width: 100%;
+    height: 100%;
+}
+.notice{
+    background: $primary;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notice h6{
+    color: white;
+    font-family: 'Gilroy-Regular', sans-serif;
+    transition: 0.3s;
+}
+
+/*------------------------------ CHEVRON --------------------------------------*/
+
+.chevronContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    align-self: center;
+    justify-self: center;
+    bottom: 50px;
+    margin-bottom: 10%;
+    opacity: 0;
+    animation-fill-mode: forwards !important;
+}
+
+.chevron {
+    position: absolute;
+    width: calc(0.6rem * 3.5);
+    height: calc(0.6rem * 0.8);
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+    animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #333;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skewY(30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+    25% {
+        opacity: 1;
+    }
+    33.3% {
+        opacity: 1;
+        transform: translateY(calc(0.6rem * 3.8));
+    }
+    66.6% {
+        opacity: 1;
+        transform: translateY(calc(0.6rem * 5.2));
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(calc(0.6rem * 8)) scale(0.5);
+    }
+    
+}
+
+// Animations
+@mixin animate($animation,$duration,$method,$times) {
+    animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+// Animation Classes 
+
+.fade-in-anim {
+    @include keyframes(fade-in){
+        0%{
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+            
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @include animate(fade-in, 0.5s, ease-in, 1);
+}
+
+.multiply-dark-anim {
+    @include keyframes(multiply-dark) {
+        0% {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        100% {
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+    }
+    @include animate(multiply-dark, 0.5s, ease-in, 1);
+}
+
+
+/* MEDIA QUERIES */
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    // .announcementCon {
+    //     position: relative;
+    //     top: -60px;
+    // }
+    .loginCon {
+        padding: 2.5rem;
+        width: 500px;
+        position: relative;
+        bottom: 60px;
+    }
+    .userIdCon {
+        width: 350px;
+    }
+    .adContainer {
+        width: 250px;
+        height: 300px;
+    }
+    .swiper {
+        width: 400px;
+    }
+    .greetCon {
+        padding-left: 6.5rem !important;
+        padding-right: 6.5rem !important;
+        position: relative;
+        bottom: 30px;
+    }
+    .greetCon h1 {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    // .announcementCon {
+    //     position: relative;
+    //     top: -80px;
+    // }
+    .adContainer {
+        width: 350px;
+        height: 300px;
+    }
+    
+    .chevronContainer {
+        bottom: 10px;
+    }
+    
+    .swiper {
+        width: 550px;
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    // .announcementCon {
+    //     position: relative;
+    //     top: -80px;
+    // }
+    .navbar-expand-lg {
+        & .navbar-header {
+            float: none;
+            padding: 0;
+            text-align: left;
+            width: auto;
+            margin-left: 1rem;
+        }
+        & .offcanvas {
+            background-image: none;
+            background-color: transparent;
+            
+            & .offcanvas-body {
+                height: 70px !important;
+                
+                & .createAccCon {
+                    display: none;
+                }
+                
+                & .navbar-nav .nav-item {
+                    & .nav-link {
+                        color: $bg-dark-text !important; 
+                    }
+                    
+                    
+                    
+                    & button {
+                        
+                        &:hover {
+                            background-color: transparent !important;
+                            margin-top: 15px !important;
+                            
+                            & a {
+                                color: $primary !important;
+                                transform: scale(1.1) translateY(-3px);
+                                text-shadow: 1px 3px 4px rgba(150, 150, 150, 0.7);
+                            }
+                        }
+                        
+                    }
+                    
+                    
+                }
+            }
+        }
+        
+    }
+    .mainBody {
+        background-position-x: left;
+    }
+    .loginCon {
+        bottom: 20px;
+    }
+    .greetCon {
+        padding-left: 3rem !important;
+        padding-right: 6rem !important;
+        padding-top: 5rem;
+    }
+    .greetCon h1 {
+        font-size: 3.7rem;
+        margin-top: 0;
+    }
+    .pCon {
+        display: block;
+        width: 90%;
+    }
+    .pCon p {
+        font-weight: 500;
+    }
+    
+    .announcementCon h2::after {
+        content: "Latest Announcements that might interest you";
+    }
+    .appBadge div {
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 0;
+        
+    }
+    .appleBtn, .appleBtn a {
+        min-width: 150px;
+        min-height: 50%;
+    }
+    .appleBtn a img {
+        width: 80%;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .gPlayBtn {
+        min-width: 190px;
+    }
+    .gPlayBtn a img {
+        width: 100%;
+        position: relative;
+        top: -12px;
+    }
+    .myAnnouncement h3 {
+        &:after {
+            content: "Latest Announcement that might interest you";
+        }
+    }
+    
+    
+    .popup-box{
+        max-width: 700px;
+        height: 600px;
+        width: 450px;
+    }
+    
+    
+    .popupimg{
+        width:  400px;
+        height: 250px;
+    }
+    
+    .popupimg img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .announcementCon {
+        margin-top: 3rem;
+    }
+    .createAccCon {
+        display: block;
+    }
+    .loginCon {
+        position: relative;
+        left: 50px;
+    }
+    .greetCon {
+        padding-top: 2rem;
+    }
+    .greetCon h1 {
+        width: 70%;
+    }
+    .pCon {
+        width: 80%;
+    }
+    
+    .swiper {
+        width: 800px;
+        height: 400px;
+    }
+    .adContainer {
+        width: 300px;
+        height: 350px;
+    }    
+    .chevronContainer {
+        position: absolute;
+        bottom: -30px;
+    } 
+    
+    
+    .popup-box{
+        height: 600px;
+        width: 750px;
+    }
+    
+    
+    .popupimg{
+        width:700px;
+        height: 350px;
+    }
+    
+    .popupimg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+/* /X-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    
+    
+}
